@@ -1,0 +1,235 @@
+
+.hidden {
+    display: none;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    background-image: url(../images/CHOQUE_UNICEF.gif);
+   
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    color: #000000;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+
+
+header > h1 {
+    background-image :url(../images/Main-Header.png);
+    color: hsl(0, 0%, 0%);
+    font-size: 79px;
+    font-family: "DM Sans", sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+header span {
+    border: none;
+    border-radius: 20px;
+    padding-left: 50px;
+    padding-right: 30px;
+    background-color: rgba(61, 82, 246, 0.865)
+}
+
+
+section {
+    width: 400px;
+    border: 7px solid #fff;
+    border-radius: 10px;
+    margin: 10px 12px;
+}
+
+section:first-of-type {
+    border: 7px solid rgb(0, 0, 0);
+    background-image: url(../images/Todo400.png);
+    width: 400px;
+    height: 450px;
+    background-repeat: no-repeat;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#inprogress {
+    border: 7px solid rgb(255, 0, 0);
+    background-image: url(../images/inprogress400.png);
+    width: 400px;
+    height: 450px; 
+    background-repeat: no-repeat;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+section:last-of-type {
+    border: 7px solid rgb(24, 3, 255);
+    background-image: url(../images/done400.png);
+    width: 400px;
+    height: 450px;
+    background-repeat: no-repeat;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 14px;
+}
+
+ul li {
+    padding: 10px 10px;
+    text-transform: uppercase;
+}
+
+li span:hover { 
+    border: 1px solid #000000;
+    background-color: #000000;
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #beb4b4;
+    font-weight: bold;
+}
+
+input {
+    margin: 0.90rem;
+    cursor: pointer;
+  }
+
+.todo input[type="checkbox"]:checked + span::after {
+    content:"⚡";
+    margin-left: 7px;
+}
+
+.inprogress input[type="checkbox"]:checked + span::after {
+    content:"🌪️";
+    margin-left: 5px;
+}
+
+.done input[type="checkbox"]:checked + span::after {
+    content:"🏎️";
+    margin-left: 5px;
+}
+
+
+.todo li:nth-child(odd) {
+    background-color: rgba(75, 74, 74, 0.884);
+    color: white;
+}
+
+.todo li:nth-child(even) {
+    background-color: #ffffffe1;
+}
+
+
+.todo-head span {
+    background-color: rgba(40, 40, 40, 0.719);
+    color: #ffffff;
+	text-shadow: 0px 0px 4px #fffbfb;
+    padding: 10px 20px ;
+    border-radius: 35px;
+}
+
+#todo > h2 {
+    color:#4d4b4b;
+}
+
+#todo > h2::after {
+    content: "⚡";
+    margin-left: 7px;
+}
+
+
+.inprogress li:nth-child(odd) {
+    background-color: rgba(246, 0, 0, 0.884);
+    color:#fffbfb;   
+}
+.inprogress li:nth-child(even) {
+    background-color: #ffffffe1;
+}
+
+.inprogress-head span {
+    background-color: rgba(255, 0, 0, 0.719);
+    color: #ffffff;
+	text-shadow: 0px 0px 4px #f5f3f3;
+    padding: 10px 20px 10px 20px;
+    border-radius: 30px;
+}
+
+
+#inprogress {
+    border: 7px solid rgb(250, 0, 0);
+    background-image: url(../images/inprogress400.png);
+    width: 400px;
+    height: 450px; 
+    background-repeat: no-repeat;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#inprogress > h2::after {
+    content: "🌋";
+    margin-left: 5px;
+}
+
+.done li:nth-child(odd) {
+    background-color: rgba(0, 13, 255, 0.884);
+    color:rgb(255, 255, 255);
+}
+
+.done li:nth-child(even) {
+    background-color: #ffffffe1;
+}
+
+.done-head span {
+    background-color: rgba(37, 48, 255, 0.719);
+    color: rgb(252, 252, 252);   
+	text-shadow: 0px 0px 4px #fbf9f9;
+    padding: 10px 20px 10px 20px;
+    border-radius: 30px;
+}
+
+
+
+#done > h2::after {
+    content: "🎆";
+    margin-left: 5px;
+}
+
+
+
+
+
+
+footer {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 35px 0;
+    background-image: url(../images/Webpage\ Banner\ 1600px\ 1\ sec.gif);
+}
+
+footer h3::after {
+    content: "🔥";
+    padding-left: 10px;
+}
+
+.sticky_footer {
+    position: sticky;
+    top: 100%;
+    height: 80px;
+    background-color: #060707f2;
+}
